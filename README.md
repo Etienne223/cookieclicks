@@ -28,9 +28,9 @@ JavaScript Lead developer
 
 ## Mission 
 
-Start : `**15/02/2021**`
+Start : `15/02/2021`
 
-End : `**17/02/2021 5PM**`
+End : `17/02/2021 5PM`
 
 Deployment Strategy : GitHub pages --> link on top of this ReadMe.
 
