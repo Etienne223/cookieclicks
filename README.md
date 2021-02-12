@@ -61,4 +61,4 @@ You can see all the details of those steps [here](https://github.com/becodeorg/B
 
 Coming soon...
 
-![CookieMonster](./assets/images.cookiemonster.gif)
+![CookieMonster](/assets/images.cookiemonster.gif)
