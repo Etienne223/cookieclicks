@@ -57,7 +57,8 @@ For this project we have guidelines divide in steps :
 You can see all the details of those steps [here](https://github.com/becodeorg/BXL-Swartz-4-27/blob/master/2.The-Hill/1.Javascript/cookieClicker.md).
 
 
-
 ## Mock-Ups 
 
 Coming soon...
+
+![CookieMonster](./assets/images.cookiemonster.gif)
