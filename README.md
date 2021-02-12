@@ -34,9 +34,7 @@ End : `17/02/2021 5PM`
 
 Deployment Strategy : GitHub pages --> link on top of this ReadMe.
 
-This project is all about making a cookie clicker from scratch. You could aske yourself what's a cookie clicker ? You can see a brieve example [here](https://orteil.dashnet.org/cookieclicker/). The goal of this type of game is easy, to make as much cookie you can imagine. How ? By clicking on a button/image/wathever you decide to make people click on. It's all about the good old capitalism, more cookie you have, more cookie you can produce by buying types of multiplicators. 
-
-
+This project is all about making a cookie clicker from scratch. You could aske yourself what's a cookie clicker ? You can see a brieve example [here](https://orteil.dashnet.org/cookieclicker/). The goal of this type of game is easy, make as much cookie you can imagine. How ? By clicking on a button/image/wathever you decide to make people click on. It's all about the good old capitalism, more cookie you have, more cookie you can produce by buying types of multiplicators. 
 
 For this project we have guidelines divide in steps :
 
