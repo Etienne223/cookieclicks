@@ -99,6 +99,7 @@ header h1 {
     padding: 15px;
 }
 
+<<<<<<< HEAD
 /* ============
     Main style
 ============= */
@@ -132,3 +133,8 @@ header h1 {
     grid-row: 1 / 2;
     align-self: center;
 }
+=======
+main {}
+
+.buttons_wrapper {}
+>>>>>>> 237c2b7afa56a3d29138d045ca2cb7084bd30438
