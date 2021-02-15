@@ -56,6 +56,12 @@ You can see all the details of those steps [here](https://github.com/becodeorg/B
 
 ## Project Managing
 
+How the team work ?
+
+The project manager (Etienne) split the team in two. One person leading the frontend (Guillaume) and one person leading the backend (Nicolas). Every morgning, afternoon and evening we had a 15minutes breefing talking about what has been done, what were the difficulties, how did we pass the difficulties and what has to be done next. In this manner it was super easy to understand how each person in the group feel and how we can track the negative of the positive feeling in the group.
+
+The project manager split the tasks in smaller task in the product backlog and assign tasks to the Front and Back leader. 
+
 
 
 ## Mock-Ups 
