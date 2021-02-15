@@ -1,0 +1,95 @@
+/* =============
+    Typography
+============= */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Ribeye&display=swap');
+
+/* ==========
+    Global
+=========== */
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+figcaption {
+    display: none;
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F4F9F9;
+}
+
+section {
+    display: grid;
+}
+
+/* ===============
+    Header style
+=============== */
+
+header h1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    font-family: 'Clicker Script', sans-serif;
+    font-size: 60px;
+    color: #F875AA;
+}
+
+#standingOne {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: end;
+    align-self: center;
+}
+
+#bigClick {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: none;
+    border: none;
+    transition: 0.3s;
+}
+
+#bigClick:hover {
+    transform: scale(1.03)
+}
+
+#standingTwo {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-self: start;
+    transform: scaleX(-1);
+    align-self: center;
+}
+
+#questionLine {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-family: 'Ribeye', sans-serif;
+    font-size: 35px;
+    margin: 10px;
+
+}
+
+#CookieCount {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin: 50px 0 50px 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #F875AA;
+    font-family: 'Ribeye', sans-serif;
+    font-size: 35px;
+    color: white;
+    justify-self: center;
+    padding: 15px;
+}
