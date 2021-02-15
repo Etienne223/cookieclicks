@@ -20,7 +20,7 @@ JavaScript Lead developer
 
 - Terminal - Git
 - Github
-- ... (Mock-ups and design)
+- Figma (Mock-ups and design)
 - Visual Studio Code (Text editor)
 - CSS 3
 - HTML 5
@@ -60,7 +60,17 @@ You can see all the details of those steps [here](https://github.com/becodeorg/B
 
 ## Mock-Ups 
 
-Coming soon...
+### Whole view of the prototype
+
+![WholeView](/assets/images/cookieKisser.png)
+
+### Focus on the mobile
+
+![MobileVersion](/assets/images/mobileKisser.png)
+
+### Focus on the desktop
+
+![DesltopVersion](/assets/images/desktopKisser.png)
 
 ![CookieMonster](/assets/images/cookiemonster.gif)
 
