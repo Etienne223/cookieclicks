@@ -12,7 +12,8 @@
 *::before {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+    font-family: "Ribeye", sans-serif;
 }
 
 figcaption {
@@ -22,10 +23,12 @@ figcaption {
 header {
     display: grid;
     grid-template-rows: auto 1fr auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
     background-color: #F4F9F9;
 }
-
+header figure {
+  display: none;
+}
 main {
     display: grid;
     background-color: #F1D1D0;
@@ -40,7 +43,7 @@ section {
 =============== */
 
 header h1 {
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
     text-align: center;
     margin: 50px 0 50px 0;
@@ -61,7 +64,12 @@ header h1 {
     grid-row: 2 / 3;
     background: none;
     border: none;
+    justify-self: center;
     transition: 0.3s;
+}
+
+#bigClick object {
+  width: 50%;
 }
 
 #bigClick:hover {
@@ -133,8 +141,23 @@ header h1 {
     grid-row: 1 / 2;
     align-self: center;
 }
-=======
-main {}
 
-.buttons_wrapper {}
->>>>>>> 237c2b7afa56a3d29138d045ca2cb7084bd30438
+@media only screen and (min-width:768px)  {
+  header figure {
+    display: grid;
+  }
+    #standingOne {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: end;
+        align-self: center;
+    }
+    #standingTwo {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        justify-self: start;
+        transform: scaleX(-1);
+        align-self: center;
+    }
+
+  }
