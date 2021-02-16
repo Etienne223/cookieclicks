@@ -1,3 +1,7 @@
+//les variables
+//total de points 
+var points = 0;
+//variable d'amélioration du clique
 var a = 1;
 //variable de productions
 var prodChocChiffre = 100;
