@@ -52,6 +52,15 @@ header h1 {
     font-family: 'Clicker Script', sans-serif;
     font-size: 60px;
     color: #F875AA;
+    padding-left: 10%;
+}
+nav {
+  grid-column: 1/4;
+  margin-right: 10%;
+}
+
+.navbarNav {
+  justify-self: end;
 }
 
 #standingOne {
