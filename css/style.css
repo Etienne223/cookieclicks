@@ -78,6 +78,10 @@ nav {
     border: none;
     justify-self: center;
     transition: 0.3s;
+    background-image: url("/assets/images/heart.svg");
+    width: 400px;
+    height: 400px;
+    background-size: contain;
 }
 
 #bigClick object {
