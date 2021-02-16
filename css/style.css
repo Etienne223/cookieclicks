@@ -60,6 +60,19 @@ nav {
     margin-right: 10%;
 }
 
+footer {
+      background-color: #F4F9F9;
+      text-align: center;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+}
+.icons2{
+  margin: 10px;
+  padding: 10px;
+}
 .navbarNav {
     justify-self: end;
 }
