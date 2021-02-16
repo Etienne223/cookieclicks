@@ -10,11 +10,21 @@ Project Manager
 
 - Etienne Lefèvre - @[Etienne223](https://github.com/Etienne223) a.k.a Tienou 🦝
 
-JavaScript Lead developer 
+Backend Lead developer 
+
+- Nicolas Enuset - @[Nicolas Enuset](https://github.com/Nicolas-Enuset) a.k.a The Diver 🤿
+
+Backend Team 
 
 - Gaël Layeux - @[Gael Layeux](https://github.com/Lord-of-Chicken) a.k.a Lord of Chicken 🐔
+
+Frontend Lead developer
+
 - Guillaume Lambermont - @[Guillaume Lambermont](https://github.com/GuillaumeLambermont) a.k.a Guigui 🍓
-- Nicolas Enuset - @[Nicolas Enuset](https://github.com/Nicolas-Enuset) a.k.a The Diver 🤿
+
+Frontend team
+
+- Etienne Lefèvre - @[Etienne223](https://github.com/Etienne223) a.k.a Tienou 🦝
 
 ## Used technologies 
 
