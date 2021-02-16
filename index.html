@@ -1,141 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <title>Cookie Kisser</title>
-</head>
-
-<body>
-  <header>
-    <!--Etienne : header avec le gros boutons en coeur ❤️-->
-    <h1>Cookie Kisser</h1>
-    <figure id="standingOne">
-      <img src="assets/images/Humaaans - Standing (1).png" alt="Standing People">
-      <figcaption>Une personne qui est debout</figcaption>
-    </figure>
-    <button type="button" id="bigClick"><object data="assets/images/heart.svg" type=""></object></button>
-    <figure id="standingTwo">
-      <img src="assets/images/Humaaans - Standing (2).png" alt="Standing poeple">
-      <figcaption>Une autre personne qui est debout</figcaption>
-    </figure>
-    <p id='questionLine'>How many bisouuuus are you going to get today?</p>
-    <div id="CookieCount"></div>
-  </header>
-  <main>
-    <!-- Section pour les boutons-->
-    <section class="buttons_wrapper">
-      <button type="button" name="chocolats" class="boutons_cadeaux">
-        <img class="button_image" src="assets/images/chocolate-box (1).svg" alt="Boite de chocolat">
-        <div class="button_name position ">
-          Chocolats
-        </div>
-        <div class="prod position ">
-          Production actuelle : 100.000/sec
-        </div>
-        <div class="level position ">
-          100
-        </div>
-      </button>
-      <button type="button" name="fleurs" class="boutons_cadeaux">
-        <img class="button_image" src="assets/images/flowers.svg" alt="Fleurs">
-        <div class="button_name position">
-          Fleurs
-        </div>
-        <div class="prod position">
-          Production actuelle : 90.000/sec
-        </div>
-        <div class="level position">
-          90
-        </div>
-      </button>
-      <button type="button" name="restaurants" class="boutons_cadeaux">
-        <img class="button_image" src="assets/images/dinner.svg" alt="Restaurants">
-        <div class="button_name position ">
-          Restaurants
-        </div>
-        <div class="prod position">
-          Production actuelle : 80.000/sec
-        </div>
-        <div class="level position">
-          80
-        </div>
-      </button>
-      <button type="button" name="bijoux" class="boutons_cadeaux">
-        <img class="button_image" src="assets/images/necklace.svg" alt="Bijoux">
-        <div class="button_name position">
-          Bijoux
-        </div>
-        <div class="prod position">
-          Production actuelle : 70.000/sec
-        </div>
-        <div class="level position">
-          70
-        </div>
-      </button>
-      <button type="button" name="animal" class="boutons_cadeaux">
-        <img class="button_image" src="assets/images/shiba.svg" alt="Chiot">
-        <div class="button_namen position ">
-          Animal
-        </div>
-        <div class="prod position">
-          Production actuelle : 60.000/sec
-        </div>
-        <div class="level position">
-          60
-        </div>
-      </button>
-      <button type="button" name="voyages" class="boutons_cadeaux">
-        <img class="button_image" src="assets/images/plane.svg" alt="Voyages">
-        <div class="button_name position">
-          Voyages
-        </div>
-        <div class="prod position">
-          Production actuelle : 50.000/sec
-        </div>
-        <div class="level position">
-          50
-        </div>
-      </button>
-      <button type="button" name="mariage" class="boutons_cadeaux">
-        <img class="button_image" src="assets/images/ring.svg" alt="Mariage">
-        <div class="button_name position">
-          Mariage
-        </div>
-        <div class="prod position">
-          Production actuelle : 40.000/sec
-        </div>
-        <div class="level position">
-          40
-        </div>
-      </button>
-      <button type="button" name="enfants" class="boutons_cadeaux">
-        <img class="button_image" src="assets/images/cradle.svg" alt="Berceau">
-        <div class="button_name position">
-          Enfants
-        </div>
-        <div class="prod position">
-          Production actuelle : 30.000/sec
-        </div>
-        <div class="level position">
-          30
-        </div>
-      </button>
-    </section>
-    <!-- Section pour les statistiques-->
-    <section>
-      <h2>Statistiques</h2>
-      <p>blablabla : 100000</p>
-      <p>blabliblou : 98475643</p>
-      <p>much wow</p>
-    </section>
-  </main>
-  <footer>
-
-  </footer>
-</body>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Cookie'Kisser">
+      <meta name="description" content="This is a brand cookie clicker type where you HAVE to generate a lot of love by making your significant other happy. Come and click on the heart!">
+      <meta name="keywords" content="Happiness, love, kisses, kiss, make love not war, game, cookie clicker, heart, fun">
+      <meta name="robots" content="index, follow">
+      <meta name="language" content="English">
+      <meta name="revisit-after" content="10 days">
+      <meta name="author" content="La Cookie'clique">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="icon" href="assets/images/favicon.ico"/>
+      <title>Cookie Kisser</title>
+   </head>
+   <body>
+      <header>
+         <!--Etienne : header avec le gros boutons en coeur ❤️-->
+         <h1>Cookie Kisser</h1>
+         <figure id="standingOne">
+            <img src="assets/images/stand.png" alt="StandingPeopleLeft">
+            <figcaption>Une personne qui est debout</figcaption>
+         </figure>
+         <button type="button" id="bigClick"><object data="assets/images/heart.svg"></object></button>
+         <figure id="standingTwo">
+            <img src="assets/images/stand2.png" alt="StandingPoepleRight">
+            <figcaption>Une autre personne qui est debout</figcaption>
+         </figure>
+         <p id='questionLine'>How many bisouuuus are you going to get today?</p>
+         <div id="CookieCount"></div>
+      </header>
+      <main>
+         <h2 id="mainTitle">Make it rain ! </h2>
+         <!-- Section pour les boutons-->
+         <section class="buttons_wrapper">
+            <button id ="choc" type="button" name="chocolats" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/chocolate-box.svg" alt="Boite de chocolat">
+               <h3 class="button_name positionTitle">
+                  Chocolats
+               </h3>
+               <p id="prodChoc" class="prod positionProd">
+                  Production actuelle : 100.000/sec
+               </p>
+               <p id="levelChoc" class="level positionLevel">
+                  100
+               </p>
+               <p id="prixChoc" class="level positionPrix">
+                coût 100
+               </p>
+            </button>
+            <button id="fleur" type="button" name="fleurs" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/flowers.svg" alt="Fleurs">
+               <h3 class="button_name positionTitle">
+                  Fleurs
+               </h3>
+               <p id="prodfleur" class="prod positionProd">
+                  Production actuelle : 90.000/sec
+               </p>
+               <p id="levelfleur" class="level positionLevel">
+                  90
+               </p>
+               <p id="prixfleur" class="level positionPrix">
+                coût 100
+               </p>
+            </button>
+            <button id="resto" type="button" name="restaurants" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/dinner.svg" alt="Restaurants">
+               <h3 class="button_name positionTitle ">
+                  Restaurants
+               </h3>
+               <p id="prodResto" class="prod positionProd">
+                  Production actuelle : 80.000/sec
+               </p>
+               <p id="levelResto" class="level positionLevel">
+                  80
+               </p>
+               <p id="prixResto" class="level positionPrix">
+                coût 100
+             </p>
+            </button>
+            <button id="bijou" type="button" name="bijoux" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/necklace.svg" alt="Bijoux">
+               <h3 class="button_name positionTitle">
+                  Bijoux
+               </h3>
+               <p id="prodBijou" class="prod positionProd">
+                  Production actuelle : 70.000/sec
+               </p>
+               <p id="levelBijou" class="level positionLevel">
+                  70
+               </p>
+               <p id="prixBijou" class="level positionPrix">
+                coût 100
+               </p>
+            </button>
+            <button id="animal" type="button" name="animal" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/shiba.svg" alt="Chiot">
+               <h3 class="button_namen positionTitle">
+                  Animal
+               </h3>
+               <p id="prodAnimal" class="prod positionProd">
+                  Production actuelle : 60.000/sec
+               </p>
+               <p id="levelAnimal" class="level positionLevel">
+                  60
+               </p>
+               <p id="prixAnimal" class="level positionPrix">
+                coût 100
+               </p>
+            </button>
+            <button  id="voyage" type="button" name="voyages" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/plane.svg" alt="Voyages">
+               <h3 class="button_name positionTitle">
+                  Voyages
+               </h3>
+               <p id="prodVoyage" class="prod positionProd">
+                  Production actuelle : 50.000/sec
+               </p>
+               <p id="levelVoyage" class="level positionLevel">
+                  50
+               </p>
+               <p id="prixVoyage" class="level positionPrix">
+                coût 100
+               </p>
+            </button>
+            <button id="mariage" type="button" name="mariage" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/ring.svg" alt="Mariage">
+               <h3 class="button_name positionTitle">
+                  Mariage
+               </h3>
+               <p id="prodMariage" class="prod positionProd">
+                  Production actuelle : 40.000/sec
+               </p>
+               <p id="levelMariage" class="level positionLevel">
+                  40
+               </p>
+               <p id="prixMariage" class="level positionPrix">
+                coût 100
+               </p>
+            </button>
+            <button id="enfant" type="button" name="enfants" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/cradle.svg" alt="Berceau">
+               <h3 class="button_name positionTitle">
+                  Enfants
+               </h3>
+               <p id="prodEnfant" class="prod positionProd">
+                  Production actuelle : 30.000/sec
+               </p>
+               <p id="levelEnfant" class="level positionLevel">
+                  30
+               </p>
+               <p id="prixEnfant" class="level positionPrix">
+                coût 100
+               </p>
+            </button>
+            <button id="click" type="button" name="clickMulti" class="boutons_cadeaux">
+               <img class="button_image" src="assets/images/like.svg" alt="clickOnHeart">
+               <h3 class="button_name positionTitle">Plus de clicks!</h3>
+               <p id="prodClick" class="prod positionProd">
+                  Production actuelle : 30.000/sec
+               </p>
+               <p id="levelClick" class="level positionLevel">
+                  30
+               </p>
+               <p id="prixClick" class="level positionPrix">
+                coût 100
+               </p>
+            </button>
+         </section>
+         <!-- Section pour les statistiques-->
+         <aside id="stats">
+            <h2>Statistiques</h2>
+            <p>blablabla : 100000</p>
+            <p>blabliblou : 98475643</p>
+            <p>much wow</p>
+         </aside>
+      </main>
+      <footer>
+      </footer>
+   </body>
 </html>
