@@ -269,7 +269,7 @@ header h1 {
     }
 } */
 
-@media only screen and (min-width : 1024px) {
+@media only screen and (min-width : 1200px) {
 
     main {
         grid-template-columns: 0.5fr auto;
