@@ -51,12 +51,22 @@ var levelClickChiffre = 0;
 var prixClickChiffre = 10;
 
 
+function usernaming() {
+	let username = prompt("C'est quoi ton petit prénom?");
+	document.cookie = 'user='+username+' ;expires=Sun, 28 Feb 2021 12:00:00 UTC; path=/';
+	var allcookies = document.cookie;
+	cookiearray = allcookies.split(';');
+	value = cookiearray[0].split('=')[1];
+	alert("Bonjour, " + value);
+  alert("L'utilisation des cookies ne retient pour le moment aucune autre info que le nom. Work in progress")
+}
+
 //désactive tous les bouttons
 document.getElementById("choc").disabled = true;
 document.getElementById("fleur").disabled = true;
 document.getElementById("resto").disabled = true;
 document.getElementById("bijou").disabled = true;
-document.getElementById("animal").disabled = true; 
+document.getElementById("animal").disabled = true;
 document.getElementById("voyage").disabled = true;
 document.getElementById("mariage").disabled = true;
 document.getElementById("enfant").disabled = true;
@@ -77,7 +87,7 @@ function achat(){
 
 //quand on clique ça monte le score
 document.getElementById("bigClick").addEventListener('click', function plusUn(){
-    points = (Math.round(points * 100) /100) + a; 
+    points = (Math.round(points * 100) /100) + a;
     CookieCount.innerHTML = "You have " + points + " bisouuuus";
     stat++;
     document.getElementById("nbClick").innerHTML = "You clicked " + stat +" times."
@@ -107,7 +117,7 @@ function acheterChoc(){
     else {
         document.getElementById("choc").disabled = false;
     }
-    }     
+    }
 
 // ***** FONCTION FLEUR *****
 
@@ -131,7 +141,7 @@ function acheterChoc(){
             else {
                 document.getElementById("fleur").disabled = false;
             }
-            }     
+            }
 
 // ***** FONCTION RESTO *****
 
@@ -155,7 +165,7 @@ function acheterChoc(){
             else {
                 document.getElementById("resto").disabled = false;
             }
-            }     
+            }
 
 // ***** FONCTION BIJOUX *****
 
@@ -179,7 +189,7 @@ document.getElementById("bijou").addEventListener('click', function autoClick() 
         else {
             document.getElementById("bijou").disabled = false;
         }
-        }     
+        }
 
 // **** FONCTION ANIMAL ****
 
@@ -204,7 +214,7 @@ function acheterAnimal(){
     else {
         document.getElementById("animal").disabled = false;
     }
-    }     
+    }
 
 // **** FONCTION VOYAGE ****
 
@@ -225,14 +235,14 @@ document.getElementById("voyage").addEventListener('click', function autoClick()
 function acheterVoyage(){
     if (points < prixVoyageChiffre){
         document.getElementById("voyage").disabled = true;
-    } 
+    }
     else {
         document.getElementById("voyage").disabled = false;
     }
-    }  
+    }
 
  // ***** FONCTION MARIAGE *****
-        
+
 document.getElementById("mariage").addEventListener('click', function autoClick() {
     setInterval(function(){ points = points + 125; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
@@ -254,7 +264,7 @@ function acheterMariage(){
     }
     }
 // ***** FONCTION ENFANT *****
-    
+
 document.getElementById("enfant").addEventListener('click', function autoClick() {
     setInterval(function(){ points = points + 150; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
@@ -274,10 +284,10 @@ function acheterEnfant(){
     else {
         document.getElementById("enfant").disabled = false;
     }
-    } 
+    }
 
 // ***** FONCTION CLICK *****
-    
+
 document.getElementById("click").addEventListener('click', function multiplier() {
     a = a + 1;        //<= augmente les points de clicque de 1
     prodClickChiffre = prodClickChiffre + 1;
@@ -298,4 +308,4 @@ function acheterClick(){
     else {
         document.getElementById("click").disabled = false;
     }
-    } 
+    }
