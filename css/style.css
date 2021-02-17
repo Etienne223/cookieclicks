@@ -44,6 +44,30 @@ section {
     Header style
 =============== */
 
+header {
+    background: rgb(249, 217, 177);
+    background: radial-gradient(circle, rgba(249, 217, 177, 1) 0%, rgba(249, 150, 184, 0.6890465658919818) 89%);
+    background-size: 300% 300%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 50%;
+        background-size: 300%;
+    }
+
+    50% {
+        background-position: 50%;
+        background-size: 75%;
+    }
+
+    100% {
+        background-position: 50%;
+        background-size: 300%;
+    }
+}
+
 header h1 {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
