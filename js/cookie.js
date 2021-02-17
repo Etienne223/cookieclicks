@@ -50,6 +50,9 @@ var prodClickChiffre = 0;
 var levelClickChiffre = 0;
 var prixClickChiffre = 10;
 
+// **** VAR BONUS *****
+var prixBonusChiffre = 3000;
+
 //Enregistre le nom du user dans les cookies
 function usernaming() {
 	let username = prompt("Quel est ton prénom? Ceci nous permet d'utiliser les cookies pour se souvenir de toi. Ton score n'est pour l'instant pas mémorisé, juste ton nom.");
@@ -84,6 +87,7 @@ function achat(){
     acheterMariage();
     acheterEnfant();
     acheterClick();
+    acheterBonus();
 }
 
 //quand on clique ça monte le score
@@ -310,3 +314,24 @@ function acheterClick(){
         document.getElementById("click").disabled = false;
     }
     }
+
+// ***** BONUS TIME *****
+
+document.getElementById("bonus").addEventListener('click', function bonus() {
+    a = a * 2;
+    setTimeout(function(){ a = a / 2; }, 30000)
+    points = points - prixBonusChiffre;
+    prixBonusChiffre = prixBonusChiffre * 2;
+    prixBonus.innerHTML = prixBonusChiffre + "bisous";
+    achat();
+    })
+
+function acheterBonus(){
+    if (points < prixBonusChiffre){
+        document.getElementById("bonus").disabled = true;
+    }
+    else {
+        document.getElementById("bonus").disabled = false;
+    }
+    }
+

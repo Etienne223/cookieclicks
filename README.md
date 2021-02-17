@@ -76,9 +76,9 @@ In this way it was super easy to understand how each person in the group feel an
 
 The fact that we worked in pair was also a really good deal because two heads are always better than one. 
 
-The first two days of the challenge we worked mostly frontend team on their side and backend on the other side. Still we were available for any questions in the group if needed. The last day was the day were we merge all our work and where all the problems could happen. However we achieve to make "Cookie Kisser" work.
+The first two days of the challenge we worked mostly frontend team on their side and backend on the other side. We used the pair coding technique to and relay each other to overcome difficulties. Still we were available for any questions in the group if needed. The last day was the day were we merge all our work and where all the problems could happen. However we achieve to make "Cookie Kisser" work. 
 
-The project manager split the tasks in smaller task in the product backlog and assign tasks to the Front and Back leader. 
+The project manager split the tasks in smaller task in the kanban and assign tasks to the Front and Back leader. For the frontend we use the "Mobile first" concept.
 
 ## Mock-Ups 
 
@@ -97,7 +97,7 @@ The project manager split the tasks in smaller task in the product backlog and a
 
 ## Team Feedback
 
-
+Coming Soon.
 
 ## Credits :
 
