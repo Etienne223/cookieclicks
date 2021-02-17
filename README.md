@@ -1,4 +1,4 @@
-# Welcome to "Cookie clickss"
+# Welcome to "Cookie Kisser"
 
 ## Progression
 
@@ -24,7 +24,7 @@ Frontend Lead developer
 
 Frontend team
 
-- Etienne Lefèvre - @[Etienne223](https://github.com/Etienne223) a.k.a Tienou 🦝
+- Etienne Lefèvre 
 
 ## Used technologies 
 
@@ -35,6 +35,7 @@ Frontend team
 - CSS 3
 - HTML 5
 - JavaScript
+- Just a pinch of Bootstrap
 
 ## Mission 
 
@@ -68,11 +69,16 @@ You can see all the details of those steps [here](https://github.com/becodeorg/B
 
 How the team work ?
 
-The project manager (Etienne) split the team in two. One person leading the frontend (Guillaume) and one person leading the backend (Nicolas). Every morgning, afternoon and evening we had a 15minutes breefing talking about what has been done, what were the difficulties, how did we pass the difficulties and what has to be done next. In this manner it was super easy to understand how each person in the group feel and how we can track the negative of the positive feeling in the group.
+The project manager (Etienne) split the team in two. One person leading the frontend (Guillaume) and one person leading the backend (Nicolas). 
+Every morgning, afternoon and evening we had a 15minutes breefing in order to talk about what has been done, what were the difficulties, how did we pass the difficulties and what has to be done next.
+
+In this way it was super easy to understand how each person in the group feel and how we can track the negative of the positive feeling in the group plus the difficulties that we could encounter.
+
+The fact that we worked in pair was also a really good deal because two heads are always better than one. 
+
+The first two days of the challenge we worked mostly frontend team on their side and backend on the other side. Still we were available for any questions in the group if needed. The last day was the day were we merge all our work and where all the problems could happen. However we achieve to make "Cookie Kisser" work.
 
 The project manager split the tasks in smaller task in the product backlog and assign tasks to the Front and Back leader. 
-
-
 
 ## Mock-Ups 
 
@@ -86,8 +92,19 @@ The project manager split the tasks in smaller task in the product backlog and a
 
 ### Focus on the desktop
 
-![DesltopVersion](/assets/images/desktopKisser.png)
+![DesktopVersion](/assets/images/desktopKisser.png)
 
-![CookieMonster](/assets/images/cookiemonster.gif)
 
 ## Team Feedback
+
+
+
+## Credits :
+
+Thanks to :
+
+(Pablo Stanley)[https://blush.design/artists/pablo-stanley] for the huuumans!
+ 
+(Flaticon)[https://www.flaticon.com/] & (Freepik)[https://www.freepik.com] for all the icons used.
+
+![CookieMonster](/assets/images/cookiemonster.gif)
