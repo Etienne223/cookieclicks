@@ -266,4 +266,3 @@ function acheterEnfant(){
         document.getElementById("enfant").disabled = false;
     }
     } 
-
