@@ -257,5 +257,12 @@ function acheterEnfant(){
     }
     } 
 
-//désactive le boutton 
-document.querySelector("button.boutons_cadeaux").disabled = true;
+//désactive touts les bouttons
+document.getElementById("choc").disabled = true;
+document.getElementById("fleur").disabled = true;
+document.getElementById("resto").disabled = true;
+document.getElementById("bijou").disabled = true;
+document.getElementById("animal").disabled = true; 
+document.getElementById("voyage").disabled = true;
+document.getElementById("mariage").disabled = true;
+document.getElementById("enfant").disabled = true;
