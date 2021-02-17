@@ -57,7 +57,7 @@ function usernaming() {
 	var allcookies = document.cookie;
 	cookiearray = allcookies.split(';');
 	value = cookiearray[0].split('=')[1];
-  alert("Merci, " + username)
+  alert("Merci, " + value)
 }
 
 //désactive tous les bouttons
