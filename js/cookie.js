@@ -3,6 +3,7 @@ var points = 0;
 
 //variable d'amélioration du clique
 var a = 1;
+var stat = 0;
 
 // ***** VAR CHOC *****
 var prodChocChiffre = 0;
@@ -76,8 +77,10 @@ function achat(){
 
 //quand on clique ça monte le score
 document.getElementById("bigClick").addEventListener('click', function plusUn(){
-    points = points + a; 
+    points = (Math.round(points * 100) /100) + a; 
     CookieCount.innerHTML = "You have " + points + " bisouuuus";
+    stat++;
+    document.getElementById("nbClick").innerHTML = "You clicked " + stat +" times."
     achat();
 });
 
@@ -87,7 +90,7 @@ document.getElementById("choc").addEventListener('click', function autoClick() {
     setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
     prodChocChiffre = prodChocChiffre + 1;
-    prodChoc.innerHTML = "Production actuelle : " + prodChocChiffre + " bisous/sec";
+    prodChoc.innerHTML = "Production actuelle : " + (Math.round(prodChocChiffre *100)/100) + " bisous/sec";
     levelChocChiffre = levelChocChiffre + 1;
     levelChoc.innerHTML = levelChocChiffre;
     points = points - prixChocChiffre;
@@ -112,7 +115,7 @@ function acheterChoc(){
         setInterval(function(){ points = points + 15; }, 1000);        //<= augmente les points de 1 par seconde
         setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
         prodFleurChiffre = prodFleurChiffre + 15;
-        prodFleur.innerHTML = "Production actuelle : " + prodFleurChiffre + " bisous/sec";
+        prodFleur.innerHTML = "Production actuelle : " + (Math.round(prodFleurChiffre *100)/100)+ " bisous/sec";
         levelFleurChiffre = levelFleurChiffre + 1;
         levelFleur.innerHTML = levelFleurChiffre;
         points = points - prixFleurChiffre;
@@ -136,7 +139,7 @@ function acheterChoc(){
         setInterval(function(){ points = points + 30; }, 1000);        //<= augmente les points de 1 par seconde
         setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
         prodRestoChiffre = prodRestoChiffre + 30;
-        prodResto.innerHTML = "Production actuelle : " + prodRestoChiffre + " bisous/sec";
+        prodResto.innerHTML = "Production actuelle : " + (Math.round(prodRestoChiffre*100)/100) + " bisous/sec";
         levelRestoChiffre = levelRestoChiffre + 1;
         levelResto.innerHTML = levelRestoChiffre;
         points = points - prixRestoChiffre;
@@ -278,12 +281,12 @@ function acheterEnfant(){
 document.getElementById("click").addEventListener('click', function multiplier() {
     a = a + 1;        //<= augmente les points de clicque de 1
     prodClickChiffre = prodClickChiffre + 1;
-    prodClick.innerHTML = "Production actuelle : " + (prodClickChiffre + 1 )+" bisous/cliques";
+    prodClick.innerHTML = "Production actuelle : " + (prodClickChiffre + 1)+" bisous/cliques";
     levelClickChiffre = levelClickChiffre + 1;
     levelClick.innerHTML = levelClickChiffre;
     points = points - prixClickChiffre;
     prixClickChiffre = prixClickChiffre * 1.5;
-    prixClick.innerHTML = prixClickChiffre + " bisous";
+    prixClick.innerHTML = (Math.round(prixClickChiffre *100)/100) + " bisous";
     achat();
   })
             //fonction qui active le bouton quand on as asser pour acheter l'amélioration
