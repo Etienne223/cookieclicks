@@ -7,47 +7,47 @@ var a = 1;
 // ***** VAR CHOC *****
 var prodChocChiffre = 0;
 var levelChocChiffre = 0;
-var prixChocChiffre = 10;
+var prixChocChiffre = 100;
 
 // ***** VAR FLEUR *****
 var prodFleurChiffre = 0;
 var levelFleurChiffre = 0;
-var prixFleurChiffre = 20;
+var prixFleurChiffre = 200;
 
 // ***** VAR RESTO *****
 var prodRestoChiffre = 0;
 var levelRestoChiffre = 0;
-var prixRestoChiffre = 20;
+var prixRestoChiffre = 500;
 
 // ***** VAR BIJOU *****
 var prodBijouChiffre = 0;
 var levelBijouChiffre = 0;
-var prixBijouChiffre = 20;
+var prixBijouChiffre = 1000;
 
 // ***** VAR ANIMAL *****
 var prodAnimalChiffre = 0;
 var levelAnimalChiffre = 0;
-var prixAnimalChiffre = 20;
+var prixAnimalChiffre = 2500;
 
 // ***** VAR VOYAGE *****
 var prodVoyageChiffre = 0;
 var levelVoyageChiffre = 0;
-var prixVoyageChiffre = 20;
+var prixVoyageChiffre = 5000;
 
 // ***** VAR MARIAGE *****
 var prodMariageChiffre = 0;
 var levelMariageChiffre = 0;
-var prixMariageChiffre = 20;
+var prixMariageChiffre = 7500;
 
 // ***** VAR ENFANT *****
 var prodEnfantChiffre = 0;
 var levelEnfantChiffre = 0;
-var prixEnfantChiffre = 20;
+var prixEnfantChiffre = 12500;
 
 // ***** VAR Click *****
 var prodClickChiffre = 0;
 var levelClickChiffre = 0;
-var prixClickChiffre = 20;
+var prixClickChiffre = 10;
 
 
 //désactive tous les bouttons
@@ -59,7 +59,6 @@ document.getElementById("animal").disabled = true;
 document.getElementById("voyage").disabled = true;
 document.getElementById("mariage").disabled = true;
 document.getElementById("enfant").disabled = true;
-document.getElementById("click").disabled = true;
 
 //fonction lors des achats
 
@@ -92,8 +91,8 @@ document.getElementById("choc").addEventListener('click', function autoClick() {
     levelChocChiffre = levelChocChiffre + 1;
     levelChoc.innerHTML = levelChocChiffre;
     points = points - prixChocChiffre;
-    prixChocChiffre = prixChocChiffre * 2;
-    prixChoc.innerHTML = prixChocChiffre + "bisous";
+    prixChocChiffre = prixChocChiffre * 1.5;
+    prixChoc.innerHTML = prixChocChiffre + " bisous";
     achat();
     })
 
@@ -110,15 +109,15 @@ function acheterChoc(){
 // ***** FONCTION FLEUR *****
 
     document.getElementById("fleur").addEventListener('click', function autoClick() {
-        setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
+        setInterval(function(){ points = points + 15; }, 1000);        //<= augmente les points de 1 par seconde
         setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
-        prodFleurChiffre = prodFleurChiffre + 1;
+        prodFleurChiffre = prodFleurChiffre + 15;
         prodFleur.innerHTML = "Production actuelle : " + prodFleurChiffre + " bisous/sec";
         levelFleurChiffre = levelFleurChiffre + 1;
         levelFleur.innerHTML = levelFleurChiffre;
         points = points - prixFleurChiffre;
-        prixFleurChiffre = prixFleurChiffre * 2;
-        prixFleur.innerHTML = prixFleurChiffre + "bisous";
+        prixFleurChiffre = prixFleurChiffre * 1.5;
+        prixFleur.innerHTML = prixFleurChiffre + " bisous";
         achat();
         })
 
@@ -134,15 +133,15 @@ function acheterChoc(){
 // ***** FONCTION RESTO *****
 
     document.getElementById("resto").addEventListener('click', function autoClick() {
-        setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
+        setInterval(function(){ points = points + 30; }, 1000);        //<= augmente les points de 1 par seconde
         setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
-        prodRestoChiffre = prodRestoChiffre + 1;
+        prodRestoChiffre = prodRestoChiffre + 30;
         prodResto.innerHTML = "Production actuelle : " + prodRestoChiffre + " bisous/sec";
         levelRestoChiffre = levelRestoChiffre + 1;
         levelResto.innerHTML = levelRestoChiffre;
         points = points - prixRestoChiffre;
-        prixRestoChiffre = prixRestoChiffre * 2;
-        prixResto.innerHTML = prixRestoChiffre + "bisous";
+        prixRestoChiffre = prixRestoChiffre * 1.5;
+        prixResto.innerHTML = prixRestoChiffre + " bisous";
         achat();
         })
 
@@ -158,15 +157,15 @@ function acheterChoc(){
 // ***** FONCTION BIJOUX *****
 
 document.getElementById("bijou").addEventListener('click', function autoClick() {
-    setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
+    setInterval(function(){ points = points + 50; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
-    prodBijouChiffre = prodBijouChiffre + 1;
+    prodBijouChiffre = prodBijouChiffre + 50;
     prodBijou.innerHTML = "Production actuelle : " + prodBijouChiffre + " bisous/sec";
     levelBijouChiffre = levelBijouChiffre + 1;
     levelBijou.innerHTML = levelBijouChiffre;
     points = points - prixBijouChiffre;
-    prixBijouChiffre = prixBijouChiffre * 2;
-    prixBijou.innerHTML = prixBijouChiffre + "bisous";
+    prixBijouChiffre = prixBijouChiffre * 1.5;
+    prixBijou.innerHTML = prixBijouChiffre + " bisous";
     achat();
     })
 
@@ -182,15 +181,15 @@ document.getElementById("bijou").addEventListener('click', function autoClick() 
 // **** FONCTION ANIMAL ****
 
 document.getElementById("animal").addEventListener('click', function autoClick() {
-    setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
+    setInterval(function(){ points = points + 75; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
-    prodAnimalChiffre = prodAnimalChiffre + 1;
+    prodAnimalChiffre = prodAnimalChiffre + 75;
     prodAnimal.innerHTML = "Production actuelle : " + prodAnimalChiffre + " bisous/sec";
     levelAnimalChiffre = levelAnimalChiffre + 1;
     levelAnimal.innerHTML = levelAnimalChiffre;
     points = points - prixAnimalChiffre;
-    prixAnimalChiffre = prixAnimalChiffre * 2;
-    prixAnimal.innerHTML = prixAnimalChiffre + "bisous";
+    prixAnimalChiffre = prixAnimalChiffre * 1.5;
+    prixAnimal.innerHTML = prixAnimalChiffre + " bisous";
     achat();
     })
 
@@ -207,15 +206,15 @@ function acheterAnimal(){
 // **** FONCTION VOYAGE ****
 
 document.getElementById("voyage").addEventListener('click', function autoClick() {
-    setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
+    setInterval(function(){ points = points + 100; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
-    prodVoyageChiffre = prodVoyageChiffre + 1;
+    prodVoyageChiffre = prodVoyageChiffre + 100;
     prodVoyage.innerHTML = "Production actuelle : " + prodVoyageChiffre + " bisous/sec";
     levelVoyageChiffre = levelVoyageChiffre + 1;
     levelVoyage.innerHTML = levelVoyageChiffre;
     points = points - prixVoyageChiffre;
-    prixVoyageChiffre = prixVoyageChiffre * 2;
-    prixVoyage.innerHTML = prixVoyageChiffre + "bisous";
+    prixVoyageChiffre = prixVoyageChiffre * 1.5;
+    prixVoyage.innerHTML = prixVoyageChiffre + " bisous";
     achat();
     })
 
@@ -232,15 +231,15 @@ function acheterVoyage(){
  // ***** FONCTION MARIAGE *****
         
 document.getElementById("mariage").addEventListener('click', function autoClick() {
-    setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
+    setInterval(function(){ points = points + 125; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
-    prodMariageChiffre = prodMariageChiffre + 1;
+    prodMariageChiffre = prodMariageChiffre + 125;
     prodMariage.innerHTML = "Production actuelle : " + prodMariageChiffre + " bisous/sec";
     levelMariageChiffre = levelMariageChiffre + 1;
     levelMariage.innerHTML = levelMariageChiffre;
     points = points - prixMariageChiffre;
-    prixMariageChiffre = prixMariageChiffre * 2;
-    prixMariage.innerHTML = prixMariageChiffre + "bisous";
+    prixMariageChiffre = prixMariageChiffre * 1.5;
+    prixMariage.innerHTML = prixMariageChiffre + " bisous";
     achat();
     })
 function acheterMariage(){
@@ -254,15 +253,15 @@ function acheterMariage(){
 // ***** FONCTION ENFANT *****
     
 document.getElementById("enfant").addEventListener('click', function autoClick() {
-    setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
+    setInterval(function(){ points = points + 150; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
-    prodEnfantChiffre = prodEnfantChiffre + 1;
+    prodEnfantChiffre = prodEnfantChiffre + 150;
     prodEnfant.innerHTML = "Production actuelle : " + prodEnfantChiffre + " bisous/sec";
     levelEnfantChiffre = levelEnfantChiffre + 1;
     levelEnfant.innerHTML = levelEnfantChiffre;
     points = points - prixEnfantChiffre;
-    prixEnfantChiffre = prixEnfantChiffre * 2;
-    prixEnfant.innerHTML = prixEnfantChiffre + "bisous";
+    prixEnfantChiffre = prixEnfantChiffre * 1.5;
+    prixEnfant.innerHTML = prixEnfantChiffre + " bisous";
     achat();
   })
 function acheterEnfant(){
@@ -283,7 +282,7 @@ document.getElementById("click").addEventListener('click', function multiplier()
     levelClickChiffre = levelClickChiffre + 1;
     levelClick.innerHTML = levelClickChiffre;
     points = points - prixClickChiffre;
-    prixClickChiffre = prixClickChiffre * 2;
+    prixClickChiffre = prixClickChiffre * 1.5;
     prixClick.innerHTML = prixClickChiffre + "bisous";
     achat();
   })
