@@ -52,15 +52,27 @@ var prixClickChiffre = 10;
 
 // **** VAR BONUS *****
 var prixBonusChiffre = 3000;
+// var time = 30;
+// var id = setInterval(argent, 1000);
 
 //Enregistre le nom du user dans les cookies
-// function usernaming() {
-// 	let username = prompt("Quel est ton prénom? Ceci nous permet d'utiliser les cookies pour se souvenir de toi. Ton score n'est pour l'instant pas mémorisé, juste ton nom.");
-// 	document.cookie = 'user='+username+' ;expires=Sun, 28 Feb 2021 12:00:00 UTC; path=/';
-// 	var allcookies = document.cookie;
-// 	cookiearray = allcookies.split(';');
-// 	value = cookiearray[0].split('=')[1];
-//   alert("Merci, " + value)
+function usernaming() {
+	let username = prompt("Quel est ton prénom? Ceci nous permet d'utiliser les cookies pour se souvenir de toi. Ton score n'est pour l'instant pas mémorisé, juste ton nom.");
+	document.cookie = 'user='+username+' ;expires=Sun, 28 Feb 2021 12:00:00 UTC; path=/';
+	var allcookies = document.cookie;
+	cookiearray = allcookies.split(';');
+	value = cookiearray[0].split('=')[1];
+  alert("Merci, " + value)
+}
+
+// **** TIMER ****
+// function argent(id){
+//     if(time === 0){
+//         clearInterval(id);
+//     } else{
+//         time = time-1;
+//         document.getElementById("time").innerHTML = time;
+//     }
 // }
 
 //désactive tous les bouttons
@@ -320,12 +332,15 @@ function acheterClick(){
 
 // ***** BONUS TIME *****
 
+
+
 document.getElementById("bonus").addEventListener('click', function bonus() {
     a = a * 2;
     setTimeout(function(){ a = a / 2; }, 30000)
     points = points - prixBonusChiffre;
     prixBonusChiffre = prixBonusChiffre * 2;
     prixBonus.innerHTML = prixBonusChiffre + "bisous";
+    // argent();
     achat();
     })
 
