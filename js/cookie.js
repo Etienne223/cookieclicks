@@ -44,6 +44,16 @@ var prodEnfantChiffre = 0;
 var levelEnfantChiffre = 0;
 var prixEnfantChiffre = 20;
 
+//désactive tous les bouttons
+document.getElementById("choc").disabled = true;
+document.getElementById("fleur").disabled = true;
+document.getElementById("resto").disabled = true;
+document.getElementById("bijou").disabled = true;
+document.getElementById("animal").disabled = true; 
+document.getElementById("voyage").disabled = true;
+document.getElementById("mariage").disabled = true;
+document.getElementById("enfant").disabled = true;
+
 //fonction lors des achats
 
 function achat(){
@@ -154,7 +164,7 @@ document.getElementById("bijou").addEventListener('click', function autoClick() 
     })
 
     function acheterBijou(){
-        if (points < prixFleurChiffre){
+        if (points < prixbijouChiffre){
             document.getElementById("bijou").disabled = true;
         }
         else {
@@ -193,8 +203,8 @@ document.getElementById("voyage").addEventListener('click', function autoClick()
     setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
     prodVoyageChiffre = prodVoyageChiffre + 1;
-    prodVoyage.innerHTML = "Production actuelle : " + prodAnimalChiffre + " bisous/sec";
-    levelVoyageChiffre = leveVoyageChiffre + 1;
+    prodVoyage.innerHTML = "Production actuelle : " + prodVoyageChiffre + " bisous/sec";
+    levelVoyageChiffre = levelVoyageChiffre + 1;
     levelVoyage.innerHTML = levelVoyageChiffre;
     points = points - prixVoyageChiffre;
     prixVoyageChiffre = prixVoyageChiffre * 2;
@@ -204,7 +214,7 @@ document.getElementById("voyage").addEventListener('click', function autoClick()
 
 //fonction qui active le bouton quand on as asser pour acheter l'amélioration
 function acheterVoyage(){
-    if (points < prixAnimalChiffre){
+    if (points < prixVoyageChiffre){
         document.getElementById("voyage").disabled = true;
     } 
     else {
@@ -257,12 +267,3 @@ function acheterEnfant(){
     }
     } 
 
-//désactive touts les bouttons
-document.getElementById("choc").disabled = true;
-document.getElementById("fleur").disabled = true;
-document.getElementById("resto").disabled = true;
-document.getElementById("bijou").disabled = true;
-document.getElementById("animal").disabled = true; 
-document.getElementById("voyage").disabled = true;
-document.getElementById("mariage").disabled = true;
-document.getElementById("enfant").disabled = true;
