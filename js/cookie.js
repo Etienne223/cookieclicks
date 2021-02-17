@@ -131,7 +131,7 @@ function acheterChoc(){
         levelFleur.innerHTML = levelFleurChiffre;
         points = points - prixFleurChiffre;
         prixFleurChiffre = prixFleurChiffre * 1.5;
-        prixFleur.innerHTML = prixFleurChiffre + " bisous";
+        prixFleur.innerHTML = "Cost : " + prixFleurChiffre + " bisous";
         achat();
         })
 
@@ -155,7 +155,7 @@ function acheterChoc(){
         levelResto.innerHTML = levelRestoChiffre;
         points = points - prixRestoChiffre;
         prixRestoChiffre = prixRestoChiffre * 1.5;
-        prixResto.innerHTML = prixRestoChiffre + " bisous";
+        prixResto.innerHTML = "Cost : " + prixRestoChiffre + " bisous";
         achat();
         })
 
@@ -179,7 +179,7 @@ document.getElementById("bijou").addEventListener('click', function autoClick() 
     levelBijou.innerHTML = levelBijouChiffre;
     points = points - prixBijouChiffre;
     prixBijouChiffre = prixBijouChiffre * 1.5;
-    prixBijou.innerHTML = prixBijouChiffre + " bisous";
+    prixBijou.innerHTML = "Cost : " + prixBijouChiffre + " bisous";
     achat();
     })
 
@@ -203,7 +203,7 @@ document.getElementById("animal").addEventListener('click', function autoClick()
     levelAnimal.innerHTML = levelAnimalChiffre;
     points = points - prixAnimalChiffre;
     prixAnimalChiffre = prixAnimalChiffre * 1.5;
-    prixAnimal.innerHTML = prixAnimalChiffre + " bisous";
+    prixAnimal.innerHTML = "Cost : " + prixAnimalChiffre + " bisous";
     achat();
     })
 
@@ -228,7 +228,7 @@ document.getElementById("voyage").addEventListener('click', function autoClick()
     levelVoyage.innerHTML = levelVoyageChiffre;
     points = points - prixVoyageChiffre;
     prixVoyageChiffre = prixVoyageChiffre * 1.5;
-    prixVoyage.innerHTML = prixVoyageChiffre + " bisous";
+    prixVoyage.innerHTML = "Cost : " + prixVoyageChiffre + " bisous";
     achat();
     })
 
@@ -253,7 +253,7 @@ document.getElementById("mariage").addEventListener('click', function autoClick(
     levelMariage.innerHTML = levelMariageChiffre;
     points = points - prixMariageChiffre;
     prixMariageChiffre = prixMariageChiffre * 1.5;
-    prixMariage.innerHTML = prixMariageChiffre + " bisous";
+    prixMariage.innerHTML = "Cost : " + prixMariageChiffre + " bisous";
     achat();
     })
 function acheterMariage(){
@@ -275,7 +275,7 @@ document.getElementById("enfant").addEventListener('click', function autoClick()
     levelEnfant.innerHTML = levelEnfantChiffre;
     points = points - prixEnfantChiffre;
     prixEnfantChiffre = prixEnfantChiffre * 1.5;
-    prixEnfant.innerHTML = prixEnfantChiffre + " bisous";
+    prixEnfant.innerHTML = "Cost : " + prixEnfantChiffre + " bisous";
     achat();
   })
 function acheterEnfant(){
@@ -297,7 +297,7 @@ document.getElementById("click").addEventListener('click', function multiplier()
     levelClick.innerHTML = levelClickChiffre;
     points = points - prixClickChiffre;
     prixClickChiffre = prixClickChiffre * 1.5;
-    prixClick.innerHTML = (Math.round(prixClickChiffre *100)/100) + " bisous";
+    prixClick.innerHTML = "Cost : " + (Math.round(prixClickChiffre *100)/100) + " bisous";
     achat();
   })
             //fonction qui active le bouton quand on as asser pour acheter l'amélioration
