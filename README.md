@@ -108,3 +108,25 @@ Thanks to :
 (Flaticon)[https://www.flaticon.com/] & (Freepik)[https://www.freepik.com] for all the icons used.
 
 ![CookieMonster](/assets/images/cookiemonster.gif)
+
+
+## Lighthouse report
+
+### Mobile
+
+![Mobile](/assets/images/cookieKissLightMob.png)
+
+### Desktop
+
+![Desktop](/assets/images/cookieKissLightDesk.png)
+
+## Evaluation criterias
+
+| Criteria       | Indicator                                                    | Yes/No |
+| -------------- | ------------------------------------------------------------ | ------ |
+| 1. Is complete | The student has realized all must-have features.             |   Yes  |
+|                | There is a published GitHub page available.                  |   Yes  |
+|                | The readme is complete                                       |   Yes  |
+| 2. Is Correct  | The HTML and CSS pass the W3C Validation tool.               |   Yes  |
+|                | The lighthouse test scores 90 at least on Performance, Best Practices, Accessibility and SEO. |  No but avg. 92  |
+|                | The indentation is perfect                                   |   Yes  |
