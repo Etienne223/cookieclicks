@@ -278,12 +278,12 @@ function acheterEnfant(){
 document.getElementById("click").addEventListener('click', function multiplier() {
     a = a + 1;        //<= augmente les points de clicque de 1
     prodClickChiffre = prodClickChiffre + 1;
-    prodClick.innerHTML = "Production actuelle : " + prodClickChiffre + " bisous/cliques";
+    prodClick.innerHTML = "Production actuelle : " + (prodClickChiffre + 1 )+" bisous/cliques";
     levelClickChiffre = levelClickChiffre + 1;
     levelClick.innerHTML = levelClickChiffre;
     points = points - prixClickChiffre;
     prixClickChiffre = prixClickChiffre * 1.5;
-    prixClick.innerHTML = prixClickChiffre + "bisous";
+    prixClick.innerHTML = prixClickChiffre + " bisous";
     achat();
   })
             //fonction qui active le bouton quand on as asser pour acheter l'amélioration
