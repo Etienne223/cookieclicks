@@ -224,6 +224,10 @@ footer {
     outline: 0;
 }
 
+.boutons_cadeaux:disabled {
+    background-color: #c1849c;
+}
+
 .button_image {
     width: 100px;
     grid-column: 1 / 2;
@@ -376,58 +380,57 @@ footer {
         grid-row: 2 / 3;
     }
 
-
-
-    #choc {
-        grid-column: 1 /3;
-        grid-row: 1 / 2;
-    }
-
-    #fleur {
-        grid-column: 3 / 5;
-        grid-row: 1 / 2;
-    }
-
-    #resto {
-        grid-column: 1 /3;
-        grid-row: 2 / 3;
-    }
-
-    #bijou {
-        grid-column: 3 / 5;
-        grid-row: 2 / 3;
-    }
-
-    #animal {
-        grid-column: 1 /3;
-        grid-row: 3 / 4;
-    }
-
-    #voyage {
-        grid-column: 3 / 5;
-        grid-row: 3 / 4;
-    }
-
-    #mariage {
-        grid-column: 1 /3;
-        grid-row: 4 / 5;
-    }
-
-    #enfant {
-        grid-column: 3 / 5;
-        grid-row: 4 / 5;
-    }
-
     #click {
         grid-column: 1 / 3;
-        grid-row: 5 / 6;
+        grid-row: 1 / 2;
     }
 
     #bonus {
         grid-column: 3 / 5;
-        grid-row: 5 / 6;
+        grid-row: 1 / 2;
 
     }
+
+    #choc {
+        grid-column: 1 /3;
+        grid-row: 2 / 3;
+    }
+
+    #fleur {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+    }
+
+    #resto {
+        grid-column: 1 /3;
+        grid-row: 3 / 4;
+    }
+
+    #bijou {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+    }
+
+    #animal {
+        grid-column: 1 /3;
+        grid-row: 4 / 5;
+    }
+
+    #voyage {
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
+    }
+
+    #mariage {
+        grid-column: 1 /3;
+        grid-row: 5 / 6;
+    }
+
+    #enfant {
+        grid-column: 3 / 5;
+        grid-row: 5 / 6;
+    }
+
 
 
     .boutons_cadeaux {
