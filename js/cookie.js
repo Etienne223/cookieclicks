@@ -44,6 +44,12 @@ var prodEnfantChiffre = 0;
 var levelEnfantChiffre = 0;
 var prixEnfantChiffre = 20;
 
+// ***** VAR Click *****
+var prodClickChiffre = 0;
+var levelClickChiffre = 0;
+var prixClickChiffre = 20;
+
+
 //désactive tous les bouttons
 document.getElementById("choc").disabled = true;
 document.getElementById("fleur").disabled = true;
@@ -264,5 +270,29 @@ function acheterEnfant(){
     }
     else {
         document.getElementById("enfant").disabled = false;
+    }
+    } 
+
+// ***** FONCTION CLICK *****
+    
+document.getElementById("click").addEventListener('click', function autoClick() {
+    setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
+    setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
+    prodClickChiffre = prodClickChiffre + 1;
+    prodClick.innerHTML = "Production actuelle : " + prodClickChiffre + " bisous/sec";
+    levelClickChiffre = levelClickChiffre + 1;
+    levelClick.innerHTML = levelClickChiffre;
+    points = points - prixClickChiffre;
+    prixClickChiffre = prixClickChiffre * 2;
+    prixClick.innerHTML = prixClickChiffre + "bisous";
+    achat();
+  })
+        
+function acheterClick(){
+    if (points < prixClickChiffre){
+        document.getElementById("click").disabled = true;
+    }
+    else {
+        document.getElementById("click").disabled = false;
     }
     } 
