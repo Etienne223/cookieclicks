@@ -52,13 +52,12 @@ var prixClickChiffre = 10;
 
 //Enregistre le nom du user dans les cookies
 function usernaming() {
-	let username = prompt("C'est quoi ton petit prénom?");
+	let username = prompt("Quel est ton prénom? Ceci nous permet d'utiliser les cookies pour se souvenir de toi. Ton score n'est pour l'instant pas mémorisé, juste ton nom.");
 	document.cookie = 'user='+username+' ;expires=Sun, 28 Feb 2021 12:00:00 UTC; path=/';
 	var allcookies = document.cookie;
 	cookiearray = allcookies.split(';');
 	value = cookiearray[0].split('=')[1];
-	alert("Bonjour, " + value);
-  alert("L'utilisation des cookies ne retient pour le moment aucune autre info que le nom. Work in progress")
+  alert("Merci, " + value)
 }
 
 //désactive tous les bouttons
