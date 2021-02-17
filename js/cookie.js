@@ -50,7 +50,7 @@ var prodClickChiffre = 0;
 var levelClickChiffre = 0;
 var prixClickChiffre = 10;
 
-
+//Enregistre le nom du user dans les cookies
 function usernaming() {
 	let username = prompt("C'est quoi ton petit prénom?");
 	document.cookie = 'user='+username+' ;expires=Sun, 28 Feb 2021 12:00:00 UTC; path=/';
