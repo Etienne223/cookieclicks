@@ -28,7 +28,7 @@ document.getElementById("choc").addEventListener('click', function autoClick() {
     points = points - prixChocChiffre;
     prixChocChiffre = prixChocChiffre * 2;
     prixChoc.innerHTML = prixChocChiffre + "bisous";
-   
+    acheterChoc();
     })
 
     
