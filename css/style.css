@@ -20,6 +20,7 @@ figcaption {
     display: none;
 }
 
+
 header {
     display: grid;
     grid-template-rows: auto 1fr auto auto;
@@ -95,7 +96,9 @@ footer {
     background-color: #F4F9F9;
     text-align: center;
 }
+.boutons_cadeaux span {display: none; position: fixed; bottom: -30px; border-radius: 15px; color: grey; background: #F4F9F9; padding: 5px;}
 
+.boutons_cadeaux:hover span {display: block; text-align: center;}
 .icons {
     display: flex;
     justify-content: center;
