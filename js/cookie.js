@@ -275,11 +275,10 @@ function acheterEnfant(){
 
 // ***** FONCTION CLICK *****
     
-document.getElementById("click").addEventListener('click', function autoClick() {
-    setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
-    setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
+document.getElementById("click").addEventListener('click', function multiplier() {
+    a = a + 1;        //<= augmente les points de clicque de 1
     prodClickChiffre = prodClickChiffre + 1;
-    prodClick.innerHTML = "Production actuelle : " + prodClickChiffre + " bisous/sec";
+    prodClick.innerHTML = "Production actuelle : " + prodClickChiffre + " bisous/cliques";
     levelClickChiffre = levelClickChiffre + 1;
     levelClick.innerHTML = levelClickChiffre;
     points = points - prixClickChiffre;
@@ -287,7 +286,8 @@ document.getElementById("click").addEventListener('click', function autoClick() 
     prixClick.innerHTML = prixClickChiffre + "bisous";
     achat();
   })
-        
+            //fonction qui active le bouton quand on as asser pour acheter l'amélioration
+
 function acheterClick(){
     if (points < prixClickChiffre){
         document.getElementById("click").disabled = true;
