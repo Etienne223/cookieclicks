@@ -124,7 +124,7 @@ document.getElementById("choc").addEventListener('click', function autoClick() {
     levelChocChiffre = levelChocChiffre + 1;
     levelChoc.innerHTML = levelChocChiffre;
     points = points - prixChocChiffre;
-    prixChocChiffre = prixChocChiffre * 1.5;
+    prixChocChiffre = prixChocChiffre * 2;
     prixChoc.innerHTML = prixChocChiffre + " bisous";
     achat();
     })
@@ -149,7 +149,7 @@ function acheterChoc(){
         levelFleurChiffre = levelFleurChiffre + 1;
         levelFleur.innerHTML = levelFleurChiffre;
         points = points - prixFleurChiffre;
-        prixFleurChiffre = prixFleurChiffre * 1.5;
+        prixFleurChiffre = prixFleurChiffre * 2;
         prixFleur.innerHTML = "Cost : " + prixFleurChiffre + " bisous";
         achat();
         })
@@ -173,7 +173,7 @@ function acheterChoc(){
         levelRestoChiffre = levelRestoChiffre + 1;
         levelResto.innerHTML = levelRestoChiffre;
         points = points - prixRestoChiffre;
-        prixRestoChiffre = prixRestoChiffre * 1.5;
+        prixRestoChiffre = prixRestoChiffre * 2;
         prixResto.innerHTML = "Cost : " + prixRestoChiffre + " bisous";
         achat();
         })
@@ -197,7 +197,7 @@ document.getElementById("bijou").addEventListener('click', function autoClick() 
     levelBijouChiffre = levelBijouChiffre + 1;
     levelBijou.innerHTML = levelBijouChiffre;
     points = points - prixBijouChiffre;
-    prixBijouChiffre = prixBijouChiffre * 1.5;
+    prixBijouChiffre = prixBijouChiffre * 2;
     prixBijou.innerHTML = "Cost : " + prixBijouChiffre + " bisous";
     achat();
     })
@@ -221,7 +221,7 @@ document.getElementById("animal").addEventListener('click', function autoClick()
     levelAnimalChiffre = levelAnimalChiffre + 1;
     levelAnimal.innerHTML = levelAnimalChiffre;
     points = points - prixAnimalChiffre;
-    prixAnimalChiffre = prixAnimalChiffre * 1.5;
+    prixAnimalChiffre = prixAnimalChiffre * 2;
     prixAnimal.innerHTML = "Cost : " + prixAnimalChiffre + " bisous";
     achat();
     })
@@ -246,7 +246,7 @@ document.getElementById("voyage").addEventListener('click', function autoClick()
     levelVoyageChiffre = levelVoyageChiffre + 1;
     levelVoyage.innerHTML = levelVoyageChiffre;
     points = points - prixVoyageChiffre;
-    prixVoyageChiffre = prixVoyageChiffre * 1.5;
+    prixVoyageChiffre = prixVoyageChiffre * 2;
     prixVoyage.innerHTML = "Cost : " + prixVoyageChiffre + " bisous";
     achat();
     })
@@ -271,7 +271,7 @@ document.getElementById("mariage").addEventListener('click', function autoClick(
     levelMariageChiffre = levelMariageChiffre + 1;
     levelMariage.innerHTML = levelMariageChiffre;
     points = points - prixMariageChiffre;
-    prixMariageChiffre = prixMariageChiffre * 1.5;
+    prixMariageChiffre = prixMariageChiffre * 2;
     prixMariage.innerHTML = "Cost : " + prixMariageChiffre + " bisous";
     achat();
     })
@@ -293,7 +293,7 @@ document.getElementById("enfant").addEventListener('click', function autoClick()
     levelEnfantChiffre = levelEnfantChiffre + 1;
     levelEnfant.innerHTML = levelEnfantChiffre;
     points = points - prixEnfantChiffre;
-    prixEnfantChiffre = prixEnfantChiffre * 1.5;
+    prixEnfantChiffre = prixEnfantChiffre * 2;
     prixEnfant.innerHTML = "Cost : " + prixEnfantChiffre + " bisous";
     achat();
   })
@@ -315,7 +315,7 @@ document.getElementById("click").addEventListener('click', function multiplier()
     levelClickChiffre = levelClickChiffre + 1;
     levelClick.innerHTML = levelClickChiffre;
     points = points - prixClickChiffre;
-    prixClickChiffre = prixClickChiffre * 1.5;
+    prixClickChiffre = prixClickChiffre * 2;
     prixClick.innerHTML = "Cost : " + (Math.round(prixClickChiffre *100)/100) + " bisous";
     achat();
   })
@@ -331,8 +331,6 @@ function acheterClick(){
     }
 
 // ***** BONUS TIME *****
-
-
 
 document.getElementById("bonus").addEventListener('click', function bonus() {
     a = a * 2;
