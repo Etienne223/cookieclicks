@@ -99,16 +99,6 @@ The project manager split the tasks in smaller task in the kanban and assign tas
 
 Coming Soon.
 
-## Credits :
-
-Thanks to :
-
-(Pablo Stanley)[https://blush.design/artists/pablo-stanley] for the huuumans!
- 
-(Flaticon)[https://www.flaticon.com/] & (Freepik)[https://www.freepik.com] for all the icons used.
-
-![CookieMonster](/assets/images/cookiemonster.gif)
-
 
 ## Lighthouse report
 
@@ -130,3 +120,13 @@ Thanks to :
 | 2. Is Correct  | The HTML and CSS pass the W3C Validation tool.               |        |
 |                | The lighthouse test scores 90 at least on Performance, Best Practices, Accessibility and SEO. |     |
 |                | The indentation is perfect                                   |        |
+
+## Credits :
+
+Thanks to :
+
+(Pablo Stanley)[https://blush.design/artists/pablo-stanley] for the huuumans!
+ 
+(Flaticon)[https://www.flaticon.com/] & (Freepik)[https://www.freepik.com] for all the icons used.
+
+![CookieMonster](/assets/images/cookiemonster.gif)
