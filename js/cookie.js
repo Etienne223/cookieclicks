@@ -54,14 +54,14 @@ var prixClickChiffre = 10;
 var prixBonusChiffre = 3000;
 
 //Enregistre le nom du user dans les cookies
-function usernaming() {
-	let username = prompt("Quel est ton prénom? Ceci nous permet d'utiliser les cookies pour se souvenir de toi. Ton score n'est pour l'instant pas mémorisé, juste ton nom.");
-	document.cookie = 'user='+username+' ;expires=Sun, 28 Feb 2021 12:00:00 UTC; path=/';
-	var allcookies = document.cookie;
-	cookiearray = allcookies.split(';');
-	value = cookiearray[0].split('=')[1];
-  alert("Merci, " + value)
-}
+// function usernaming() {
+// 	let username = prompt("Quel est ton prénom? Ceci nous permet d'utiliser les cookies pour se souvenir de toi. Ton score n'est pour l'instant pas mémorisé, juste ton nom.");
+// 	document.cookie = 'user='+username+' ;expires=Sun, 28 Feb 2021 12:00:00 UTC; path=/';
+// 	var allcookies = document.cookie;
+// 	cookiearray = allcookies.split(';');
+// 	value = cookiearray[0].split('=')[1];
+//   alert("Merci, " + value)
+// }
 
 //désactive tous les bouttons
 document.getElementById("choc").disabled = true;
@@ -90,6 +90,8 @@ function achat(){
     acheterBonus();
 }
 
+setInterval(function(){achat(); }, 100)
+
 //quand on clique ça monte le score
 document.getElementById("bigClick").addEventListener('click', function plusUn(){
     points = (Math.round(points * 100) /100) + a;
@@ -102,6 +104,7 @@ document.getElementById("bigClick").addEventListener('click', function plusUn(){
 // **** FONCTION CHOC ****
 
 document.getElementById("choc").addEventListener('click', function autoClick() {
+    setTimeout(function(){achat(); }, 100)
     setInterval(function(){ points = points + 1; }, 1000);        //<= augmente les points de 1 par seconde
     setInterval(function(){ CookieCount.innerHTML = "You have " + points + " bisouuuus"; }, 1000);  //<= actualise les points gagner par seconde
     prodChocChiffre = prodChocChiffre + 1;
