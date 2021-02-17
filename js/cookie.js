@@ -59,6 +59,7 @@ document.getElementById("animal").disabled = true;
 document.getElementById("voyage").disabled = true;
 document.getElementById("mariage").disabled = true;
 document.getElementById("enfant").disabled = true;
+document.getElementById("click").disabled = true;
 
 //fonction lors des achats
 
