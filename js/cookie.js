@@ -44,12 +44,9 @@ var prodEnfantChiffre = 0;
 var levelEnfantChiffre = 0;
 var prixEnfantChiffre = 20;
 
+//fonction lors des achats
 
-
-//quand on clique ça monte le score
-document.getElementById("bigClick").addEventListener('click', function plusUn(){
-    points = points + a; 
-    CookieCount.innerHTML = "You have " + points + " bisouuuus";
+function achat(){
     acheterChoc();
     acheterFleur();
     acheterResto();
@@ -59,6 +56,13 @@ document.getElementById("bigClick").addEventListener('click', function plusUn(){
     acheterMariage();
     acheterEnfant();
     acheterClick();
+}
+
+//quand on clique ça monte le score
+document.getElementById("bigClick").addEventListener('click', function plusUn(){
+    points = points + a; 
+    CookieCount.innerHTML = "You have " + points + " bisouuuus";
+    achat();
 });
 
 // **** FONCTION CHOC ****
@@ -73,7 +77,7 @@ document.getElementById("choc").addEventListener('click', function autoClick() {
     points = points - prixChocChiffre;
     prixChocChiffre = prixChocChiffre * 2;
     prixChoc.innerHTML = prixChocChiffre + "bisous";
-    acheterChoc();
+    achat();
     })
 
 //fonction qui active le bouton quand on a assez pour acheter l'amélioration
@@ -98,7 +102,7 @@ function acheterChoc(){
         points = points - prixFleurChiffre;
         prixFleurChiffre = prixFleurChiffre * 2;
         prixFleur.innerHTML = prixFleurChiffre + "bisous";
-        acheterFleur();
+        achat();
         })
 
         function acheterFleur(){
@@ -122,7 +126,7 @@ function acheterChoc(){
         points = points - prixRestoChiffre;
         prixRestoChiffre = prixRestoChiffre * 2;
         prixResto.innerHTML = prixRestoChiffre + "bisous";
-        acheterResto();
+        achat();
         })
 
         function acheterResto(){
@@ -146,7 +150,7 @@ document.getElementById("bijou").addEventListener('click', function autoClick() 
     points = points - prixBijouChiffre;
     prixBijouChiffre = prixBijouChiffre * 2;
     prixBijou.innerHTML = prixBijouChiffre + "bisous";
-    acheterBijou();
+    achat();
     })
 
     function acheterBijou(){
@@ -170,7 +174,7 @@ document.getElementById("animal").addEventListener('click', function autoClick()
     points = points - prixAnimalChiffre;
     prixAnimalChiffre = prixAnimalChiffre * 2;
     prixAnimal.innerHTML = prixAnimalChiffre + "bisous";
-    acheterAnimal();
+    achat();
     })
 
 //fonction qui active le bouton quand on as asser pour acheter l'amélioration
@@ -195,7 +199,7 @@ document.getElementById("voyage").addEventListener('click', function autoClick()
     points = points - prixVoyageChiffre;
     prixVoyageChiffre = prixVoyageChiffre * 2;
     prixVoyage.innerHTML = prixVoyageChiffre + "bisous";
-    acheterVoyage();
+    achat();
     })
 
 //fonction qui active le bouton quand on as asser pour acheter l'amélioration
@@ -220,7 +224,7 @@ document.getElementById("mariage").addEventListener('click', function autoClick(
     points = points - prixMariageChiffre;
     prixMariageChiffre = prixMariageChiffre * 2;
     prixMariage.innerHTML = prixMariageChiffre + "bisous";
-    acheterMariage();
+    achat();
     })
 function acheterMariage(){
     if (points < prixMariageChiffre){
@@ -242,7 +246,7 @@ document.getElementById("enfant").addEventListener('click', function autoClick()
     points = points - prixEnfantChiffre;
     prixEnfantChiffre = prixEnfantChiffre * 2;
     prixEnfant.innerHTML = prixEnfantChiffre + "bisous";
-    acheterEnfant();
+    achat();
   })
 function acheterEnfant(){
     if (points < prixEnfantChiffre){
@@ -254,4 +258,4 @@ function acheterEnfant(){
     } 
 
 //désactive le boutton 
-document.querySelector("boutons_cadeaux").disabled = true;
+document.querySelector("button.boutons_cadeaux").disabled = true;
