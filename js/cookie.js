@@ -164,7 +164,7 @@ document.getElementById("bijou").addEventListener('click', function autoClick() 
     })
 
     function acheterBijou(){
-        if (points < prixbijouChiffre){
+        if (points < prixBijouChiffre){
             document.getElementById("bijou").disabled = true;
         }
         else {
@@ -266,4 +266,3 @@ function acheterEnfant(){
         document.getElementById("enfant").disabled = false;
     }
     } 
-
