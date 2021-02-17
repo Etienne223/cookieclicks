@@ -4,7 +4,7 @@
 
 The project's progression can be seen [here](https://etienne223.github.io/cookieclicks) 
 
-## Group Members
+## Group Members of the Cookie'Clique
 
 Project Manager 
 
