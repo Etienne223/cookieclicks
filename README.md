@@ -97,7 +97,26 @@ The project manager split the tasks in smaller task in the kanban and assign tas
 
 ## Team Feedback
 
-Coming Soon.
+### Etienne
+
+Dans l'ensemble, je suis très satisfait de la réalisation ainsi que de la gestion de l'équipe pour ce premier projet s'étalant sur 3 jours. En terme de travail d'équipe, j'étais fier de la progression effectuée des deux côtés, que ce soit backend ou frontend. Lors du merge final malgré son paquet de problèmes, on a réussi à tout réviser et à faire fonctionner le code. Cependant je pense que certains problèmes auraient pu être évité si, en tant que PM, j'avais fait des checks de codes / tenter de merge les travaux avant le dernier jour. Agile oui, mais les premiers tests auraient pu se faire bien plus tôt ce qui nous aurait permis d'éviter certains soucis et fait poser les bonnes questions aux bons moments. Et une difficulté particulière, bien que minimme, pour moi était la gestion des branchs. Je me perdais souvent dans l'ordre des actions à effectuer pour que cela marche convenablement. Il m'arrivait donc souvent de devoir repull tout le travail pour repartir sur la dernière version car pour certaines raisons je n'arrivais plus à pull ou push mon travail.
+
+Côté matière, j'étais assez content de faire autre chose que du JS, étant donné qu'on en a pas mal mangé précédemment par les exercices j'ai pu laisser mon esprit créatif avec la team frontend. Il faut par contre souligner que c'est aussi avec cet exercice que je me suis rendu compte qu'on pouvait aussi faire énormément de chouette chose pour le design grâce au JS ce qui du coup ne m'a pas donné moins envie d'en faire, loin de là.
+
+Pour résumer, très belle expérience avec des personnes que je ne connaissais pas forcémment de base. Enrichissement pro et relationnel.
+
+### Guillaume
+
+1. Travail en équipe.
+2. La matière (JS).
+Le PM a fait un très bon job pour cadrer le workflow, notamment grâce aux explications sur la méthode AGILE. Après répartition des tâches, l'équipe a pu avancer librement et rapidement, tout en ayant constamment une vue sur l'avancement global du projet. Il faut dire qu'il n'y a eu aucun conflit au niveau décisionnel, les membres étant toujours sur la même longueur d'onde. Ce que j'ai trouvé plus difficile était d'avancer à deux ou plus sur un même morceau de code. Ce n'est déjà pas facile de trouver un problème dans son propre code, alors en trouver dans celui d'un autre rajoute une nouvelle couche de difficulté. Malgré cela, réfléchir à plusieurs sur un bug permet généralement d'accélérer le processus, tout en favorisant la gymnastique de l'esprit.
+Etant donné que Javascript était la nouvelle matière et la cible principale du projet, j'aurais voulu y être attaché dès le départ, mais je pense que c'était la volonté générale du groupe, et il fallait bien que le front soit fait aussi. Cela dit, travailler à deux sur le html/css m'a permis d'en refaire, et surtout de découvrir d'autres manières d'écrire le code du front. Je pense que ça contribue beaucoup à la formation personnelle de voir une manière différente de penser/coder.
+Dans l'ensemble, ravi de cette première expérience du travail en groupe, j'étais curieux de découvrir comment avancer à plusieurs sur un même projet, comment cordonner et consolider des codes qui viennent de plusieurs cerveaux. C'est principalement pour obtenir une expérience de collaboration que j'ai choisi de participer à Becode. 
+
+### Nicolas
+
+
+### Gaël
 
 
 ## Lighthouse report
